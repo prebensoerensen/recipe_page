@@ -21,29 +21,32 @@ export function RecipeCard(props: RecipeProps) {
 
   return (
     <article className="recipe-card">
-      <img src={imageUrl} alt={name} />
-      <h3>{name}</h3>
-      <div>
-        <p>Servings: {servings}</p>
-        <p>Time to make: {timeToMake}</p>
+      <img className="card-image" src={imageUrl} alt={name} />
+      <div className="card-description">
+        <h3>{name}</h3>
+        <div>
+          <p>Servings: {servings}</p>
+          <p>Time to make: {timeToMake}</p>
+        </div>
+        <div className="card-ingredients">
+          <h4>Ingredients:</h4>
+          <ul>
+            {ingredients.map((ingredient, index) => (
+              <li key={index}>
+                {ingredient.item}: {ingredient.quantity}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div>
-        <h4>Ingredients:</h4>
-        <ul>
-          {ingredients.map((ingredient, index) => (
-            <li key={index}>
-              {ingredient.item}: {ingredient.quantity}
-            </li>
+      <div className="card-directions">
+        <h4>Directions:</h4>
+        <ol>
+          {directions.map((direction, index) => (
+            <li key={index}>{direction}</li>
           ))}
-        </ul>
+        </ol>
       </div>
-
-      <h4>Directions:</h4>
-      <ol>
-        {directions.map((direction, index) => (
-          <li key={index}>{direction}</li>
-        ))}
-      </ol>
     </article>
   );
 }

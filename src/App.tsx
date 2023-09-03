@@ -2,7 +2,7 @@ import { RecipeCard } from "./components/RecipeCard/RecipeCard";
 import { LayoutBase } from "./Layouts/LayoutBase/LayoutBase";
 import { recipes } from "./data/Recipes";
 
-import "./index.css";
+import "./App.css";
 
 function App() {
   return (
