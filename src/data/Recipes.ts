@@ -1,5 +1,23 @@
+import image1 from "../assets/image1.webp";
+import image2 from "../assets/image2.webp";
+import image3 from "../assets/image3.webp";
+import image4 from "../assets/image4.webp";
+import image5 from "../assets/image5.webp";
+import image6 from "../assets/image6.webp";
+import image7 from "../assets/image7.webp";
+import image8 from "../assets/image8.webp";
+import image9 from "../assets/image9.webp";
+import image10 from "../assets/image10.webp";
+import image11 from "../assets/image11.webp";
+import image12 from "../assets/image12.webp";
+import image13 from "../assets/image13.webp";
+import image14 from "../assets/image14.webp";
+import image15 from "../assets/image15.webp";
+import image16 from "../assets/image16.webp";
+
 type Recipe = {
   id: number;
+  imageUrl: string;
   name: string;
   servings: number;
   timeToMake: string; // format: "xx mins"
@@ -11,6 +29,7 @@ export const recipes: Recipe[] = [
   {
     id: 100,
     name: "Spaghetti Aglio e Olio",
+    imageUrl: image1,
     servings: 2,
     timeToMake: "20 mins",
     ingredients: [
@@ -31,6 +50,7 @@ export const recipes: Recipe[] = [
   {
     id: 101,
     name: "Creamy Mushroom Soup",
+    imageUrl: image2,
     servings: 4,
     timeToMake: "40 mins",
     ingredients: [
@@ -52,6 +72,7 @@ export const recipes: Recipe[] = [
   {
     id: 102,
     name: "Tomato Salad",
+    imageUrl: image3,
     servings: 4,
     timeToMake: "10 mins",
     ingredients: [
@@ -70,6 +91,7 @@ export const recipes: Recipe[] = [
   {
     id: 103,
     name: "Grilled Cheese Sandwich",
+    imageUrl: image4,
     servings: 2,
     timeToMake: "15 mins",
     ingredients: [
@@ -86,6 +108,7 @@ export const recipes: Recipe[] = [
   {
     id: 104,
     name: "Classic Omelette",
+    imageUrl: image5,
     servings: 1,
     timeToMake: "10 mins",
     ingredients: [
@@ -105,6 +128,7 @@ export const recipes: Recipe[] = [
   {
     id: 105,
     name: "Potato Wedges",
+    imageUrl: image6,
     servings: 4,
     timeToMake: "45 mins",
     ingredients: [
@@ -123,6 +147,7 @@ export const recipes: Recipe[] = [
   {
     id: 106,
     name: "Chocolate Mug Cake",
+    imageUrl: image7,
     servings: 1,
     timeToMake: "5 mins",
     ingredients: [
@@ -142,6 +167,7 @@ export const recipes: Recipe[] = [
   {
     id: 107,
     name: "Berry Smoothie",
+    imageUrl: image8,
     servings: 2,
     timeToMake: "5 mins",
     ingredients: [
@@ -159,6 +185,7 @@ export const recipes: Recipe[] = [
   {
     id: 108,
     name: "Chicken Caesar Salad",
+    imageUrl: image9,
     servings: 2,
     timeToMake: "25 mins",
     ingredients: [
@@ -178,6 +205,7 @@ export const recipes: Recipe[] = [
   {
     id: 109,
     name: "French Toast",
+    imageUrl: image10,
     servings: 4,
     timeToMake: "20 mins",
     ingredients: [
@@ -198,6 +226,7 @@ export const recipes: Recipe[] = [
   {
     id: 110,
     name: "Tuna Salad",
+    imageUrl: image11,
     servings: 2,
     timeToMake: "10 mins",
     ingredients: [
@@ -218,6 +247,7 @@ export const recipes: Recipe[] = [
   {
     id: 111,
     name: "Fruit Parfait",
+    imageUrl: image12,
     servings: 2,
     timeToMake: "10 mins",
     ingredients: [
@@ -235,6 +265,7 @@ export const recipes: Recipe[] = [
   {
     id: 112,
     name: "Beef Stir Fry",
+    imageUrl: image13,
     servings: 2,
     timeToMake: "30 mins",
     ingredients: [
@@ -255,6 +286,7 @@ export const recipes: Recipe[] = [
   {
     id: 113,
     name: "Potato Soup",
+    imageUrl: image14,
     servings: 4,
     timeToMake: "45 mins",
     ingredients: [
@@ -275,6 +307,7 @@ export const recipes: Recipe[] = [
   {
     id: 114,
     name: "Baked Salmon",
+    imageUrl: image15,
     servings: 2,
     timeToMake: "20 mins",
     ingredients: [
@@ -294,6 +327,7 @@ export const recipes: Recipe[] = [
   {
     id: 115,
     name: "Guacamole",
+    imageUrl: image16,
     servings: 4,
     timeToMake: "15 mins",
     ingredients: [

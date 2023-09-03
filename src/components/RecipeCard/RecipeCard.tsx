@@ -8,6 +8,7 @@ interface Ingredient {
 interface RecipeProps {
   id: number;
   name: string;
+  imageUrl: string;
   servings: number;
   timeToMake: string;
   ingredients: Ingredient[];
@@ -15,22 +16,27 @@ interface RecipeProps {
 }
 
 export function RecipeCard(props: RecipeProps) {
-  const { name, servings, timeToMake, ingredients, directions } = props;
+  const { name, imageUrl, servings, timeToMake, ingredients, directions } =
+    props;
 
   return (
     <article className="recipe-card">
+      <img src={imageUrl} alt={name} />
       <h3>{name}</h3>
-      <p>Servings: {servings}</p>
-      <p>Time to make: {timeToMake}</p>
-
-      <h4>Ingredients:</h4>
-      <ul>
-        {ingredients.map((ingredient, index) => (
-          <li key={index}>
-            {ingredient.quantity} of {ingredient.item}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <p>Servings: {servings}</p>
+        <p>Time to make: {timeToMake}</p>
+      </div>
+      <div>
+        <h4>Ingredients:</h4>
+        <ul>
+          {ingredients.map((ingredient, index) => (
+            <li key={index}>
+              {ingredient.item}: {ingredient.quantity}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <h4>Directions:</h4>
       <ol>

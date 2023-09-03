@@ -13,6 +13,7 @@ function App() {
             key={recipe.id}
             id={recipe.id}
             name={recipe.name}
+            imageUrl={recipe.imageUrl}
             servings={recipe.servings}
             timeToMake={recipe.timeToMake}
             ingredients={recipe.ingredients}
