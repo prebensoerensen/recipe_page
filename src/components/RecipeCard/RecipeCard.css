@@ -6,11 +6,15 @@
 .recipe-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: auto auto; */
-  gap: 1rem;
   width: 25rem;
+  background: hsl(35, 100%, 91%);
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0.15rem 0.15rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.65);
+  color: #585858;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  outline: 0.15rem solid #e7e7e7;
 }
 
 /* Image */
@@ -24,9 +28,36 @@
 .card-description {
   grid-row: 1;
   grid-column: 2;
+  background: hsl(34, 96%, 81%);
+  font-size: 0.9rem;
+  text-align: center;
+  height: 18.27rem;
+}
+
+.card-description h3 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.card-ingredients {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.card-ingredients ul {
+  list-style-type: none;
+  text-align: center;
+  transform: translateX(-3ch);
 }
 
 .card-directions {
   grid-row: 2;
   grid-column: span 2;
+  padding: 2rem;
+}
+
+.card-directions h4 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }

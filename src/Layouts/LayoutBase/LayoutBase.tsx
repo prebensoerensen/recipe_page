@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Logo } from "../../components/Logo/Logo";
+import "./LayoutBase.css";
 
 interface LayoutBaseProps {
   children: ReactNode;
@@ -9,9 +10,10 @@ export function LayoutBase(props: LayoutBaseProps) {
   const { children } = props;
 
   return (
-    <div>
-      <header>
-        <Logo size="2rem" />
+    <>
+      <header className="header">
+        <Logo size="5rem" />
+        <h1>Recipes</h1>
       </header>
 
       <main>{children}</main>
@@ -19,6 +21,6 @@ export function LayoutBase(props: LayoutBaseProps) {
       <footer>
         <p>&copy; PrebenS</p>
       </footer>
-    </div>
+    </>
   );
 }
