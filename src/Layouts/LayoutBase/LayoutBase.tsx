@@ -13,7 +13,10 @@ export function LayoutBase(props: LayoutBaseProps) {
     <>
       <header className="header">
         <Logo size="5rem" />
-        <h1>Recipes</h1>
+        <div>
+          <h1>Savor the Flavor</h1>
+          <h2>Your Gateway to Gourmet Recipes</h2>
+        </div>
       </header>
 
       <main>{children}</main>
