@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: hsla(0, 0%, 100%, 0.9);
   background-color: #242424;
 
   font-synthesis: none;
@@ -18,10 +18,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto 5rem auto;
-  width: 100svw;
-  min-height: 100svh;
+  width: 100vw;
+  min-height: 100vh;
   background-image: url("./assets/background.webp");
-  background-size: auto 100svh;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -38,6 +38,6 @@ body {
 
 @media (orientation: landscape) {
   body {
-    background-size: 100svw auto;
+    background-size: 100vw auto;
   }
 }
