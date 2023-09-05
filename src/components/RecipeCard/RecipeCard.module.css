@@ -51,7 +51,7 @@
 .cardDirections {
   grid-row: 2;
   grid-column: span 2;
-  padding: 2rem;
+  padding: 1.5rem;
   height: 16.5rem;
   font-size: 0.9rem;
 }
@@ -60,6 +60,10 @@
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0.5rem;
+}
+
+.cardDirections li {
+  margin: 0.15rem 0;
 }
 
 @media only screen and (max-width: 500px) {
