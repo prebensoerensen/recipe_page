@@ -28,7 +28,7 @@ body {
   width: 100%;
   min-height: 100svh;
   background-image: url("./assets/background.webp");
-  background-size: auto 100vh;
+  background-size: auto 100svh;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -46,6 +46,6 @@ body {
 
 @media (orientation: landscape) {
   body {
-    background-size: 100vw auto;
+    background-size: 100svw auto;
   }
 }
