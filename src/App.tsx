@@ -11,7 +11,6 @@ function App() {
         {recipes.map((recipe) => (
           <RecipeCard
             key={recipe.id}
-            id={recipe.id}
             name={recipe.name}
             imageUrl={recipe.imageUrl}
             servings={recipe.servings}

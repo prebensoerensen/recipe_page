@@ -6,7 +6,6 @@ interface Ingredient {
 }
 
 interface RecipeProps {
-  id: number;
   name: string;
   imageUrl: string;
   servings: number;
