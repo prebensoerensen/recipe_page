@@ -1,19 +1,19 @@
-import image1 from "../assets/image1.webp";
-import image2 from "../assets/image2.webp";
-import image3 from "../assets/image3.webp";
-import image4 from "../assets/image4.webp";
-import image5 from "../assets/image5.webp";
-import image6 from "../assets/image6.webp";
-import image7 from "../assets/image7.webp";
-import image8 from "../assets/image8.webp";
-import image9 from "../assets/image9.webp";
-import image10 from "../assets/image10.webp";
-import image11 from "../assets/image11.webp";
-import image12 from "../assets/image12.webp";
-import image13 from "../assets/image13.webp";
-import image14 from "../assets/image14.webp";
-import image15 from "../assets/image15.webp";
-import image16 from "../assets/image16.webp";
+import image1 from "../assets/RecipeImages/image1.webp";
+import image2 from "../assets/RecipeImages/image2.webp";
+import image3 from "../assets/RecipeImages/image3.webp";
+import image4 from "../assets/RecipeImages/image4.webp";
+import image5 from "../assets/RecipeImages/image5.webp";
+import image6 from "../assets/RecipeImages/image6.webp";
+import image7 from "../assets/RecipeImages/image7.webp";
+import image8 from "../assets/RecipeImages/image8.webp";
+import image9 from "../assets/RecipeImages/image9.webp";
+import image10 from "../assets/RecipeImages/image10.webp";
+import image11 from "../assets/RecipeImages/image11.webp";
+import image12 from "../assets/RecipeImages/image12.webp";
+import image13 from "../assets/RecipeImages/image13.webp";
+import image14 from "../assets/RecipeImages/image14.webp";
+import image15 from "../assets/RecipeImages/image15.webp";
+import image16 from "../assets/RecipeImages/image16.webp"; //er det en bedre måte å gjøre dette på enn individuelle imports?
 
 type Recipe = {
   id: number;
