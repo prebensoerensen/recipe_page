@@ -3,12 +3,15 @@ header {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  padding: 1rem 2rem;
-  background: #202020;
+  width: 100%;
+  border-radius: 0 0 3rem 3rem;
+  padding: 1rem 3rem;
+  background: #2c2c2c;
   font-family: "Kalam", cursive;
   font-size: 0.7rem;
   text-align: center;
-  box-shadow: 0 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.4);
+  text-shadow: 0 0 1rem hsl(0, 0%, 0%);
+  box-shadow: 0 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.8);
   top: 0;
   z-index: 5;
 }

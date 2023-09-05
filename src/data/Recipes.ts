@@ -13,7 +13,9 @@ import image12 from "../assets/RecipeImages/image12.webp";
 import image13 from "../assets/RecipeImages/image13.webp";
 import image14 from "../assets/RecipeImages/image14.webp";
 import image15 from "../assets/RecipeImages/image15.webp";
-import image16 from "../assets/RecipeImages/image16.webp"; //er det en bedre måte å gjøre dette på enn individuelle imports?
+import image16 from "../assets/RecipeImages/image16.webp";
+import image17 from "../assets/RecipeImages/image17.webp";
+import image18 from "../assets/RecipeImages/image18.webp"; //er det en bedre måte å gjøre dette på enn individuelle imports?
 
 type Recipe = {
   id: number;
@@ -344,6 +346,48 @@ export const recipes: Recipe[] = [
       "Mix all ingredients together.",
       "Squeeze lime juice and add salt to taste.",
       "Stir well and serve with tortilla chips.",
+    ],
+  },
+  {
+    id: 116,
+    name: "Easy Beef Tacos",
+    imageUrl: image17,
+    servings: 4,
+    timeToMake: "20 mins",
+    ingredients: [
+      { item: "Ground beef", quantity: "500g" },
+      { item: "Taco seasoning", quantity: "1 packet" },
+      { item: "Taco shells", quantity: "8" },
+      { item: "Lettuce", quantity: "1 head" },
+      { item: "Cheddar cheese", quantity: "100g" },
+    ],
+    directions: [
+      "Cook the ground beef with seasoning in a skillet.",
+      "Heat the taco shells in the oven as per the package.",
+      "Chop the lettuce and grate the cheese.",
+      "Assemble tacos with beef, lettuce, and cheese.",
+      "Serve immediately and enjoy.",
+    ],
+  },
+  {
+    id: 117,
+    name: "Vegetable Pasta",
+    imageUrl: image18,
+    servings: 4,
+    timeToMake: "15 mins",
+    ingredients: [
+      { item: "Fusilli pasta", quantity: "400g" },
+      { item: "Olive oil", quantity: "2 tbsp" },
+      { item: "Cherry tomatoes", quantity: "200g" },
+      { item: "Spinach", quantity: "100g" },
+      { item: "Parmesan cheese", quantity: "50g" },
+    ],
+    directions: [
+      "Cook pasta as per the package instructions.",
+      "Heat oil and sauté cherry tomatoes for 5 mins.",
+      "Add spinach and cook until wilted.",
+      "Mix in the cooked pasta.",
+      "Serve topped with grated parmesan.",
     ],
   },
 ];
