@@ -1,4 +1,4 @@
-import "./RecipeCard.css";
+import styles from "./RecipeCard.module.css";
 
 interface Ingredient {
   item: string;
@@ -19,15 +19,15 @@ export function RecipeCard(props: RecipeProps) {
     props;
 
   return (
-    <article className="recipe-card">
-      <img className="card-image" src={imageUrl} alt={name} />
-      <div className="card-description">
+    <article className={styles.recipeCard}>
+      <img className={styles.cardImage} src={imageUrl} alt={name} />
+      <div className={styles.cardDescription}>
         <h3>{name}</h3>
         <div>
           <p>Servings: {servings}</p>
           <p>Time to make: {timeToMake}</p>
         </div>
-        <div className="card-ingredients">
+        <div className={styles.cardIngredients}>
           <h4>Ingredients:</h4>
           <ul>
             {ingredients.map((ingredient, index) => (
@@ -38,7 +38,7 @@ export function RecipeCard(props: RecipeProps) {
           </ul>
         </div>
       </div>
-      <div className="card-directions">
+      <div className={styles.cardDirections}>
         <h4>Directions:</h4>
         <ol>
           {directions.map((direction, index) => (

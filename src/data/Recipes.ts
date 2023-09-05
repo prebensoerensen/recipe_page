@@ -20,7 +20,7 @@ type Recipe = {
   imageUrl: string;
   name: string;
   servings: number;
-  timeToMake: string; // format: "xx mins"
+  timeToMake: string;
   ingredients: Array<{ item: string; quantity: string }>;
   directions: string[];
 };

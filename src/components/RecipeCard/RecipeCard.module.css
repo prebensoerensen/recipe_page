@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.recipe-card {
+.recipeCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 23rem;
@@ -16,14 +16,14 @@
   outline: 0.15rem solid #e7e7e7;
 }
 
-.card-image {
+.cardImage {
   grid-row: 1;
   grid-column: 1;
   width: 100%;
   object-fit: cover;
 }
 
-.card-description {
+.cardDescription {
   grid-row: 1;
   grid-column: 2;
   background: hsl(34, 96%, 81%);
@@ -31,24 +31,24 @@
   text-align: center;
 }
 
-.card-description h3 {
+.cardDescription h3 {
   margin-top: 1.5rem;
   font-size: 1rem;
   text-decoration: underline;
 }
 
-.card-ingredients {
+.cardIngredients {
   font-size: 0.8rem;
   text-align: center;
   margin-top: 1rem;
 }
-.card-ingredients ul {
+.cardIngredients ul {
   list-style-type: none;
   text-align: center;
   transform: translateX(-3ch);
 }
 
-.card-directions {
+.cardDirections {
   grid-row: 2;
   grid-column: span 2;
   padding: 2rem;
@@ -56,7 +56,7 @@
   font-size: 0.9rem;
 }
 
-.card-directions h4 {
+.cardDirections h4 {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0.5rem;

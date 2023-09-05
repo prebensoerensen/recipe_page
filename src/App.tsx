@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <LayoutBase>
-      <section className="recipes-section">
+      <section className="recipesSection">
         {recipes.map((recipe) => (
           <RecipeCard
             key={recipe.id}

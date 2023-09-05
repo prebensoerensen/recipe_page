@@ -33,7 +33,7 @@ body {
   background-attachment: fixed;
 }
 
-.recipes-section {
+.recipesSection {
   max-width: 90%;
   display: flex;
   flex-wrap: wrap;

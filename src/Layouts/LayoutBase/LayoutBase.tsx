@@ -11,7 +11,7 @@ export function LayoutBase(props: LayoutBaseProps) {
 
   return (
     <>
-      <header className="header">
+      <header>
         <Logo size="5rem" />
         <div>
           <h1>Savor the Flavor</h1>
